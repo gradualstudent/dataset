@@ -221,7 +221,7 @@ module.exports = function(grunt) {
 
     watch : {
       files : "<config:lint.files>",
-      tasks : "lint "
+      tasks : "lint qunit"
     },
 
     jshint : {
@@ -318,5 +318,5 @@ module.exports = function(grunt) {
   });
 
   // Default task.
-  grunt.registerTask("default", ["jshint", "concat", "uglify", "compress", "node", "clean"]);
+  grunt.registerTask("default", ["jshint", "qunit", "concat", "uglify", "compress", "node", "clean"]);
 };
