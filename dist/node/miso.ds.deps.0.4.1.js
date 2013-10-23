@@ -114,7 +114,7 @@ this.Miso = require("miso.events");
 
 // Include Miso Dataset lib
 /**
-* Miso.Dataset - v0.4.1 - 3/13/2013
+* Miso.Dataset - v0.4.1 - 10/23/2013
 * http://github.com/misoproject/dataset
 * Copyright (c) 2013 Alex Graul, Irene Ros;
 * Dual Licensed: MIT, GPL
@@ -1831,7 +1831,7 @@ Version 0.0.1.2
 
       // compute the type by assembling a sample of computed types
       // and then squashing it to create a unique subset.
-      var type = _.inject(data.slice(0, 5), function(memo, value) {
+      var type = _.inject(data, function(memo, value) {
 
         var t = Dataset.typeOf(value);
 

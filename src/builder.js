@@ -20,7 +20,7 @@
 
       // compute the type by assembling a sample of computed types
       // and then squashing it to create a unique subset.
-      var type = _.inject(data.slice(0, 5), function(memo, value) {
+      var type = _.inject(data, function(memo, value) {
 
         var t = Dataset.typeOf(value);
 
